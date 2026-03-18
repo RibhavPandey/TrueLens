@@ -5,8 +5,9 @@
  * Exports to window.VerdictCaptions namespace.
  *
  * Strategy (DOM Scraping):
- *  As requested by user: expand the video description, click "Show transcript",
- *  and scrape the resulting DOM elements.
+ *  Expands the video description, clicks "Show transcript",
+ *  and scrapes the resulting DOM elements. This is the only
+ *  method that successfully bypassed API restrictions for the user.
  */
 
 (function () {
