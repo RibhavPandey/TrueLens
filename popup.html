@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdict</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="popup-root">
+
+    <!-- Header -->
+    <div id="popup-header">
+      <div id="popup-logo">
+        <svg width="22" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 4L10 16L17 4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="15.5" cy="15.5" r="3.5" fill="#22c55e"/>
+          <path d="M13.5 15.5L15 17L17.5 14" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Verdict</span>
+      </div>
+      <span id="popup-tagline">Stripped to the truth</span>
+    </div>
+
+    <!-- Main Action -->
+    <div id="popup-main">
+      <button id="check-btn" class="btn-primary">
+        <span id="check-btn-text">Check This Video</span>
+        <span id="check-btn-spinner" class="btn-spinner hidden"></span>
+      </button>
+      <p id="status-line" class="status-idle">Open a YouTube video to get started.</p>
+    </div>
+
+    <!-- Divider -->
+    <div class="popup-divider"></div>
+
+    <!-- API Key Section -->
+    <div id="apikey-section">
+      <div id="apikey-toggle-row">
+        <span id="apikey-label">Google AI API Key</span>
+        <button id="apikey-toggle" class="toggle-btn">Show</button>
+      </div>
+      <div id="apikey-input-row" class="hidden">
+        <input
+          type="password"
+          id="apikey-input"
+          placeholder="AIza..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="apikey-save" class="btn-save">Save</button>
+      </div>
+      <p id="apikey-status" class="apikey-status-msg hidden"></p>
+    </div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
